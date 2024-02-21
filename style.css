@@ -76,6 +76,7 @@ img{
   article {
     display: grid;
     grid-row: span 3;
+    grid-template-rows: subgrid;
     h2 {
       min-height: 3em;
       margin: 0;
