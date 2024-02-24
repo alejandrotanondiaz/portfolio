@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Vis & Society Assignment 2</title>
+	<link rel="stylesheet" href="https://vis-society.github.io/assignments/report.css" />
+</head>
+
+<body>
+	<header>
+		<h1>
+			<small>Assignment 2</small>
+			Exploratory Data Analysis
+		</h1>
+
+		<p>
+			<strong>Alejandro Tañón Díaz</strong> — <em>atanon@mit.edu</em>
+		</p>
+	</header>
+	<main>
+		<section>
+			<h2>Subtheme: Housing for the Rich</h2>
+
+			<h3>Overall Analysis Questions</h3>
+			<ol>
+				<li>How does location relate to prices and sales?</li>
+				<li>How have sales changed over time?</li>
+				<li>What types of buildings are sold more?</li>
+				<li>Who is participating in these sales?</li>
+				
+			</ol>
+		</section>
+
+		<section>
+			<h2>Discoveries & Insights</h2>
+
+			<figure>
+				<img width="100%" src="images/All_Usecodes.png" alt="" />
+				<figcaption>
+					This dataset contains information about different types of properties. Usecodes in 013, 031 and 071 refer to multiuse buildings that have residential and commercial uses. Usecodes in the 100s refer to residential buildings. The rest of the usecodes refer to either commercial, industrial, or government buildings and should be excluded.
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img width="100%" src="images/Filtered_Usecodes.png" alt="" />
+				<figcaption>
+					After applying these filters, we get the following usecodes. Note that this is a logarithmic y axis and 44,375 out of the 49,031 total sales have a 102 usecode, which refers to condominiums. This shows how much of the housing in Boston seems to be smaller and more concetrated to account for the density of its population.
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img width="100%" src="images/sales_per_price.png" alt="" />
+				<figcaption>
+				When looking at the number of sales per price, we notice that there are 169 data points with a price of 1. This seems to be a weird price so we assume it i seither used as a placeholder for a missing price or representing a specific type of sale. In any case, we will exclude these sales form our analysis.
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img width="100%" src="images/profit_per_year.png" alt="" />
+				<figcaption>
+				When plotting the total price difference throughout the years, we can see how in recent years there has been a drastic increase in the profits generated.
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img width="100%" src="images/Purpose_of_Sales.png" alt="" />
+				<figcaption>
+				This visualization shows a summary of the flip term of all sales in our dataset. We can see that the vast majority of the sales are not bought with the intention of being flipped.
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img width="100%" src="images/sales_by_zip.png" alt="" />
+				<figcaption>
+				This visualization shows how many sales happen by zip code. We can see that most sales that are happening are focused on 6 main zip codes that are closest to the inner city. This seems to reflect the dynamic mentioned in the Boston Globe article where th ecity has been prioritizing inner city high luxury housing.
+				</figcaption>
+			</figure>
+
+			<figure>
+				<img width="100%" src="images/AvgPrice_per_zip.png" alt="" />
+				<figcaption>
+				This visualization shows the average annual price per zip code. There seem to be some expensive buildings on two of the outer zip codes. However, the rest of the zip codes seem to correlate with the number of sales per zip code from the last image.
+				</figcaption>
+			</figure>
+
+			
+		</section>
+
+		<section>
+			<h2>Summary</h2>
+
+			<p>Overall, we can make some conclusions regarding the residential sales in the city of Boston in the last two decades. The vast majority of the transactions are condos in the inner city zip codes. These buildings have an average annual prices of about a million dollars. These findings confirm the arguments made in the Boston Globe article that shows how building housing for the rich in Boston keeps pushing low income citizens into the outskirts of the city where there are not many housing options. </p>
+		</section>
+	</main>
+</body>
+</html>
