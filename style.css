@@ -1,6 +1,7 @@
 html {
   --color-accent: oklch(63.33% 0.136 297.53);
   accent-color: var(--color-accent);
+  color-scheme: light dark;
 }
 body {
     /* Set line height to 1.5 times the font size
@@ -34,6 +35,7 @@ nav {
   }
   a:hover {
     background-color: oklch(from var(--color-accent) 95% 5% h);
+    /* background-color: color-mix(in oklch, var(--color-accent) 100%, canvas 80%); */
     border-bottom-width: 0.4em;
     border-bottom-style: solid;
     border-bottom-color: var(--color-accent);
@@ -105,4 +107,11 @@ section {
       margin-bottom: 1px;
     }
   }
+}
+
+.color-scheme{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 75%;
 }
